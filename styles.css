@@ -1,0 +1,258 @@
+@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;700&display=swap');
+
+*{font-family: 'Be Vietnam Pro', sans-serif;
+box-sizing: border-box;}
+
+:root {
+    --rojoBrillante: rgb(242, 95, 58);
+    --azulOscuro: rgb(35, 44, 81);
+    --azulGrisáceoOscuro: rgb(143, 148, 167);
+    --azulMuyOscuro: rgb(29, 30, 37);
+    --rojoMuyPálido: rgb(255, 239, 234);
+    --varianteGrisClaro: rgb(249, 249, 249);
+}
+
+body {
+background-image: url("../Entrega Final Front/IMG/bg-tablet-pattern.svg");
+background-repeat: no-repeat;
+background-position: 62.5rem -12.5rem ;
+margin: 4.69rem 9.12rem 4.69rem 10.31rem ;
+}
+
+main{
+background-image: url("../Entrega Final Front/IMG/bg-tablet-pattern.svg");
+background-repeat: no-repeat;
+background-position: -31.25rem 62.5rem ;
+}
+
+header{
+display: flex;
+justify-content: space-between;
+align-items: center;
+margin-top: 4.69rem;
+padding: 65px 165px;
+gap: 224px;
+}
+
+nav  ul{
+display: flex;
+list-style: none;
+gap: 20px;
+padding: 0px;
+}
+
+nav  ul  li  a {
+text-decoration: none;
+color: var(--azulMuyOscuro);
+font-weight: 500;
+font-size: 0.81em;
+justify-content: space-between;
+}
+
+.logo{
+width: 9em;
+height: 1.5em;
+}
+
+.orangebutton {
+background-color: var(--rojoBrillante);
+box-shadow: 0px 4px 7px rgba(0, 0, 0, 0.25);
+width: 8.37em;
+height: 2.75em;
+border-radius: 3rem;
+color: var(--varianteGrisClaro);
+border: none;
+}
+.mini-orangebutton {
+
+background-color: var(--rojoBrillante);
+width: 69px;
+height: 43px;
+border-radius: 1.875rem;
+color: var(--varianteGrisClaro);
+border: none;
+}
+.goButton{
+background-color:white ;
+}
+
+.seccion1{
+display: flex;
+justify-content: space-around;
+margin: 4.69rem 9.12rem 4.69rem 10.31rem
+}
+.seccion2{
+display: flex;
+justify-content: center;
+gap: 10rem;
+padding:50remn;
+margin-left:20em;
+}
+
+.seccion2 h2{
+font-weight: 700;
+font-size: 2.25rem;
+color: var(--azulOscuro);
+}
+.seccion2 p{
+color: var(--azulGrisáceoOscuro);
+}
+
+.whatDifferent{
+margin-right: 6.0em;
+}
+
+.pBox{
+padding-left: 6em;
+color: var(--azulGrisáceoOscuro);
+}
+
+.box {
+display:flex;
+align-items: center;
+gap: 1.5rem;  
+}
+
+.seccion3{
+text-align: center;
+justify-items: auto;
+margin: 4.69rem 0rem 4.69rem 0rem ;
+
+}
+.seccion3 div{
+display: flex;
+gap: 7em;
+}
+.seccion3 h2{
+text-align: center;
+margin-bottom: 8rem;
+}
+
+.tarjetas{
+display: flex;
+flex-direction: column;
+align-items: center;
+text-align: center;
+background-color: #FAFAFA;
+}
+.tarjetas img{
+width: 70px;
+height: 70px;
+position: relative;
+top: -35px
+}
+
+h1{
+width: 439px;
+height: 198px;
+font-family: 'Be Vietnam';
+font-weight: 700;
+font-size: 58px;
+line-height: 66px;
+display: flex;
+align-items: center;
+letter-spacing: -0.035em;
+color:  #232C50;
+}
+.seccion1 p {
+font-family: 'Be Vietnam';
+font-weight: 500;
+font-size: 1.03rem;
+margin: 1.75rem 0px;
+line-height: 157.1%;
+width: 395px;
+}
+
+
+.seccion1 p{
+font-weight:500 ;
+font-size:1.03rem ;
+margin:28px;
+
+}
+.estadisticas{
+height: 32.81rem;
+width: 36.25rem; ;
+}
+
+.footerSecundario{
+display: flex;
+background-color: var(--rojoBrillante);
+justify-content:space-between;
+align-items: center;    
+}
+.footerSecundario h2{
+font-weight:700 ;
+font-size:2rem ;
+color: var(--varianteGrisClaro);
+margin:28px;
+margin-left: 10rem;
+width: 25rem;
+
+
+}
+.whiteButton{
+
+background-color:  #FFFFFF;
+box-shadow: 0px 4px 7px rgba(0, 0, 0, 0.25);
+width: 8.37em;
+height: 2.75em;
+border-radius: 3rem;
+color: #F3603B;
+border: none;
+margin-right: 10rem;
+
+}
+
+footer{
+display:flex;
+justify-content: space-between;
+padding: 4.69rem 9.12rem 4.69rem 10.31rem;
+background-color:#1E1E26;
+margin-bottom:0px;
+height: 15.43rem;
+
+}
+.footerseccion1{
+display: flex;
+flex-direction: column;
+
+
+    
+}
+.footerseccion1 a{
+    margin: 0rem 0rem 5rem 0rem;
+}
+
+.redesSociales{
+    order:1;
+    justify-content: space-between;
+    
+}
+.redesSociales a{
+margin: 0rem 0.2rem;
+};
+
+
+.footerSeccion2{
+
+display: flex;
+}
+
+.footerSeccion2 ul{
+    gap: 2.65em;
+    list-style-type: none;
+    text-decoration: none;
+}
+.footerSeccion2 ul a{
+    list-style-type: none;
+    text-decoration: none;
+    color: var(--varianteGrisClaro);
+    font-weight: 400;
+    font-size: 0.81em;
+}
+ 
+
+.footerseccion3{
+    
+}
