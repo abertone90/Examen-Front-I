@@ -2,7 +2,7 @@
 
 *{font-family: 'Be Vietnam Pro', sans-serif;
 box-sizing: border-box;}
-
+/*colores utilizados para el estilo de la pagina  */
 :root {
 --rojoBrillante: rgb(242, 95, 58);
 --azulOscuro: rgb(35, 44, 81);
@@ -12,6 +12,8 @@ box-sizing: border-box;}
 --varianteGrisClaro: rgb(249, 249, 249);
 }
 
+
+/*Seccion destinada al estilo del Body */
 body {
 background-image: url("../Entrega Final Front/IMG/bg-tablet-pattern.svg");
 background-repeat: no-repeat;
@@ -21,7 +23,7 @@ margin: 0;
 padding: 0;
 
 }
-
+/* Estilos utilizados para el main*/
 main{
 background-image: url("../Entrega Final Front/IMG/bg-tablet-pattern.svg");
 background-repeat: no-repeat;
@@ -31,6 +33,7 @@ flex-wrap: wrap;
 
 }
 
+/* Estilos utilizados para el Header*/
 header{
 display: flex;
 justify-content: space-between;
@@ -41,11 +44,9 @@ padding: 45px 145px;
 flex-wrap: wrap;
 width: 100%;
 }
-
+/* h1 utilizado para seccion principal del codigo*/
 h1{
-    width: 439px;
-    height: 198px;
-    font-family: 'Be Vietnam';
+    width: 100%;
     font-weight: 700;
     font-size: 58px;
     line-height: 66px;
@@ -57,18 +58,16 @@ h1{
     }
     
 
-.art2 img {
-width:100%;
-min-width: 290px;
-display: flex;
-    
-}
 
+/* Seccion de navegador*/
 nav  ul{
 display: flex;
 list-style: none;
 gap: 20px;
 padding: 0px;
+}
+.burger{
+    display: none;
 }
 
 nav  ul  li  a {
@@ -84,6 +83,7 @@ width: 9em;
 height: 1.5em;
 }
 
+/* Boton universal naranja de get started*/
 .orangebutton {
 background-color: var(--rojoBrillante);
 box-shadow: 0px 4px 7px rgba(0, 0, 0, 0.25);
@@ -92,24 +92,8 @@ height: 2.75em;
 border-radius: 3rem;
 color: var(--varianteGrisClaro);
 border: none;
-
-
 }
-.mini-orange {
-
-background-color: var(--rojoBrillante);
-width: 69px;
-height: 43px;
-border-radius: 1.875rem;
-color: var(--varianteGrisClaro);
-border: none;
-justify-content: center;
-text-align: center;
-padding-top: 0.5em;
-}
-
-
-
+/* Estilos para seccion 1 dimensiones, titulo y graficos*/
 .seccion1{
 display: flex;
 justify-content: space-around;
@@ -133,23 +117,26 @@ width: 90%;
     width: 30%; 
     min-width: 310px;
     margin: 1rem;
- 
-
     }
+
+    .art2 img {
+        width:100%;
+        min-width: 290px;
+        display: flex;
+            
+        }
     .seccion1 p {
-        font-family: 'Be Vietnam';
         font-weight: 500;
         font-size: 1.03rem;
         margin: 1rem 0px;
         line-height: 157.1%;
         width: 70%;
+        
        
-       
-      
-        }
+}
         
 
-
+/* Estilos utilizados la seccion 2*/
 .seccion2{
 display: flex;
 flex-wrap: wrap;
@@ -159,16 +146,29 @@ width:75%;
 }
 .artBoxes{
     width: 30%;
-    min-width: 310px;
+    min-width: 375px;
     margin: 1rem;
 
 }
 .artBoxes2{
     width: 30%;
-    min-width: 310px;
+    min-width: 375px;
     margin: 1rem;
     
 }
+/*Clase universal para circulos naranja pequeños 01 02 03*/
+.mini-orange {
+
+    background-color: var(--rojoBrillante);
+    width: 69px;
+    height: 43px;
+    border-radius: 1.875rem;
+    color: var(--varianteGrisClaro);
+    border: none;
+    justify-content: center;
+    text-align: center;
+    padding-top: 0.5em;
+    }
 
 .seccion2 h2{
 font-weight: 700;
@@ -193,7 +193,7 @@ display:flex;
 align-items: center;
 
 }
-
+/* Dimensiones para seccion 3 que contiene los testimonios y fotos de usuarios*/
 .seccion3{
 display: flex;
 flex-direction: column;
@@ -202,6 +202,10 @@ flex-wrap: wrap;
 justify-content: space-around;
 margin-bottom: 2rem
 
+
+
+
+
 }
 .seccion3 div{
 display: flex;
@@ -209,6 +213,7 @@ flex-wrap: wrap;
 width: 80%;
 margin: 2rem auto;
 justify-content: space-between;
+
 
 
 }
@@ -244,7 +249,7 @@ top: -35px
 
 
 
-
+/* Se llama footer secundario a barra naranja sobre el footer*/
 .footerSecundario{
 display: flex;
 flex-wrap: wrap;
@@ -275,7 +280,7 @@ margin-right: 10rem;
 
 
 }
-
+/* Estilos utilizados la footer*/
 footer{
 display: flex;
 flex-direction: column;
@@ -374,8 +379,7 @@ border-radius: 30px;
 }
 
 .copyR{
-    display: flex;
-
+display: flex;
 justify-content: flex-end;
 width: 90%;
 margin-top: -2.2rem;
@@ -417,9 +421,7 @@ font-size: 1.25em;
 margin: 0rem 0.2rem;
     }
     
-   header .fa-solid {
-display: none;
-    }
+
     .redesSociales a i:hover {
 color: #F3603B;
     }
@@ -435,48 +437,107 @@ min-width: 290px;
 width: 30%;
     }
 
-
-@media (max-width: 375px) {
-     
-    
-@media (max-width: 375px) {
-
-    .nav{
-        display: none;
-    }
+    .orangebutton:hover{
+        opacity: 50%;
+        
+}
+.orangebutton:active{
+    transform: scale(.90);
 }
 
-  
-    .boton-inicio {
+.whiteButton:hover{
+    opacity: 50%;
+    
+}
+.whiteButton:active{
+    transform: scale(.90);
+    }
+
+
+
+
+
+@media (max-width:375px) {
+
+    .navbar{
         display: none;
     }
-    
-    
+.navbar .orangebutton{
+    display: none;
+}
+   .burger{
+        display: block;
+        
+    }
     header {
         display: flex;
-        justify-content: space-around;
-        margin-bottom: 4.69rem;
-        align-items: center;
-        padding: 2rem;
-        gap: 10rem;
-    
+        justify-content: space-between;
+        flex-wrap: nowrap;
+        padding: 20px;
+        margin-top: 5px;
+    }
+    header .orangebutton{
+        display: none;
     }
     
     .seccion1 {
-    
-    
       flex-direction: column-reverse;
-    
+   
+    } 
+    h1 {
+        font-size: 43px;
+    align-items: center;
+    }
+    .seccion1 p {
+        width: 85%;
+        text-align: center;
+    }
+    .seccion1 .orangebutton{
+      
+        margin-left: 80px
     }
     .seccion2 {
+    flex-direction: column;
     
-    
+  }
+  .artBoxes2{
+    margin: none;
+    justify-content: flex-start;
+    width: 100%;
+
+  }
+
+.seccion2 p{
+    padding-left: 0em;
+}
+       .seccion3{
         flex-direction: column;
-      
+       }
+       .footerSecundario{
+        margin: none;
+        justify-content: center;
+        width: 100%;
+       }
+       .footerSecundario .whiteButton{
+        margin-left: 90px;
+       }
+
+      footer {
+        display: flex;
+        width: 100%;
       }
+      .artFooter{
+        flex-direction: column-reverse;
+      }
+      .footerSeccion1{
+        flex-direction: column-reverse;
+        display: flex;
+    }
+
     
     
     }
+
 
    
 
